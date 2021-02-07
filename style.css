@@ -1,0 +1,165 @@
+body{
+    color: #666666;
+    margin: 0;
+    text-align: center;
+}
+ 
+header{
+    position: absolute;
+    top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #33333399;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1;
+}
+
+header ul{
+    margin: 0px;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header img {
+    height: 30px;
+}
+
+.background {
+    z-index: 0;
+    background-size: cover;
+    background-color: #606060;
+}
+
+footer{
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.top{
+    position: relative;
+    height: 800px;
+}
+
+.top h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom :0;
+    transform: translateY(-25%);
+    margin:  auto;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+}
+
+.about{
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+h2{
+    color: #333333;
+    margin: 0;
+}
+
+.skills h2{
+    color: #FFFFFF;
+    margin: 0;
+}
+
+hr{
+    margin-bottom: 50px;
+    height: 5px;
+    width: 100px;
+    border: none;
+}
+
+.blue-line{
+    background-color: #606060;
+}
+
+.about img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+	border-radius:50%;
+    object-position:-70px 0px;
+}
+
+.about table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.skills{
+    background-color: #606060;
+    padding: 100px;
+}
+
+.white-line{
+    background-color: #DDDDDD;
+}
+
+.box{
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 15%;
+}
+
+.box img{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.works{
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+.card {
+    position: relative; /* div全体をリンクにするため */
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px;
+    width: 25%;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+}
+
+/* div全体をリンクにするため */
+.card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.card:hover{
+    opacity: 0.8;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
