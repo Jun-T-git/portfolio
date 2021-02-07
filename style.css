@@ -58,10 +58,10 @@ footer{
     right: 0;
     top: 50%;
     bottom :0;
-    transform: translateY(-25%);
+    transform: translateY(-15%);
     margin:  auto;
     font-size: 70px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #FFFFFF;
 }
 
@@ -96,7 +96,7 @@ hr{
     height: 200px;
     object-fit:cover;
 	border-radius:50%;
-    object-position:-70px 0px;
+    /* object-position:0px 0px; */
 }
 
 .about table{
