@@ -121,6 +121,7 @@ hr{
     padding: 20px;
     margin: 20px;
     width: 15%;
+    min-width: 170px;
 }
 
 .box img{
