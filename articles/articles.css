@@ -9,7 +9,7 @@ body{
 
 h1{
     color: #333333;
-    font-size: 28pt;
+    font-size: 24pt;
     border-left: solid 10px #1e56a0;
     border-bottom: solid 2px #1e56a0;
     padding: 5px 15px;
@@ -17,10 +17,23 @@ h1{
 
 h2{
     color: #333333;
-    font-size: 22pt;
+    font-size: 20pt;
     border-left: solid 10px #1e56a0;
     padding: 3px 15px;
     margin-bottom: 7px;
+}
+
+h3{
+    color: #333333;
+    font-size: 16pt;
+    font-weight: bold;
+    border-bottom: solid 2px #1e56a0;
+    margin-bottom: 5px;
+}
+
+dt{
+    color: #333333;
+    font-weight: bold;
 }
 
 /* header */
