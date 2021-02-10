@@ -63,6 +63,12 @@ header img {
     background-color: #FFFFFF;
 }
 
+@media only screen and (max-width: 750px) {
+    #center-box{
+        width: 100%;
+    }
+}
+
 .text{
     margin: 0 10px;
 }
