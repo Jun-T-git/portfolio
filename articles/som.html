@@ -16,14 +16,77 @@
       <section>
         <h2>概要</h2>
         <div class="text">
-          Coming soon...
-          <a href="https://jun-t-git.github.io/som/" target="_blank" rel="noopener noreferrer">リンク</a>
+          <p>
+            機械学習手法の一つであるSOMを直感的に理解するためのデモプログラム．<br><br>
+            Self Organizing Map（自己組織化マップ）はT.Kohonenによって開発された教師なし学習手法で，高次元データを低次元に写像することができる．<br><br>
+            SOMeLでは，SOMによって色配列を3次元（RGB）から2次元（位置）に変換している． 似た色（RGBの値が近い色）同士は近くにマッピングされる．
+          </p>
+          <p><a href="https://jun-t-git.github.io/som/" target="_blank" rel="noopener noreferrer">リンクはこちら</a></p>
+          <br>
         </div>
       </section>
       <section>
         <h2>詳細</h2>
         <div class="text">
-          Coming soon...
+          <p>
+            アルゴリズムは以下の通りである．<br>
+            <ol>
+              <li>マッピング用の2次元色配列をランダムに与える．</li>
+              <li>1の配列のうち，各入力の色に最も近い要素とその周囲の要素に入力の色を加える．
+              <li>色を変更する範囲と度合いを小さくする．</li>     
+              <li>2,3を繰り返す．</li>       
+            </ol>
+            <img src="image/som_1.png">
+            <img src="image/som_2.png"></li>
+          </p>
+          <p>実行すると以下のようになる．</p>
+          <img src="image/som_gif.gif">
+          <br>
+        </div>
+      </section>
+      <section>
+        <h2>使い方</h2>
+        <div class="text">
+          <h3>パラメータ</h3>
+          <dl>
+            <dt>Panel Size</dt>
+            <dd>マッピング用平面のサイズ（1辺のパネル数）．3~30の範囲で指定可能．</dd>
+            <dt>Input Size</dt>
+            <dd>入力色数．3~30の範囲で指定可能．</dd>
+            <dt>Neighbor(Init)</dt>
+            <dd>色の変更範囲の初期値．1~30の範囲で指定可能．</dd>
+            <dt>Input</dt>
+            <dd>入力色（並べ替えたい色）．RGBで指定可能．</dd>
+            <dt>Test</dt>
+            <dd>テスト用の色．RGBで指定可能．</dd>
+            <dt>Pred</dt>
+            <dd>入力色配列のうち，Testと最も平面上の距離が近い色．</dd>
+            <dt>Truth</dt>
+            <dd>入力色配列のうち，Testと最もRGBの距離が近い色．</dd>
+            <dt>Accuracy</dt>
+            <dd>Testをランダムに与えながら1,000回行ったとき，Pred=Truthとなった割合．</dd>
+            <dt>Step</dt>
+            <dd>回数．</dd>
+            <dt>Learning Rate</dt>
+            <dd>学習率（色をどれだけ変更するか）．</dd>
+            <dt>Neighbor</dt>
+            <dd>色の変更範囲．</dd>
+          </dl>
+          <h3>ボタン</h3>
+          <dl>
+            <dt>start</dt>
+            <dd>SOMを実行．</dd>
+            <dt>stop</dt>
+            <dd>一時停止．</dd>
+            <dt>next</dt>
+            <dd>1入力のみ実行．ひとつずつ見ながら理解するために使う．</dd>
+            <dt>test</dt>
+            <dd>入力のうちTestとRGB距離が最も近い色（Truth）と平面上の距離が最も近い色（Pred）が一致しているかを確かめ，正解率を算出する．</dd>
+            <dt>reset panel</dt>
+            <dd>マッピング用2次元色配列をリセット．</dd>
+            <dt>reset</dt>
+            <dd>マッピング用2次元色配列と入力をリセット．</dd>
+          </dl>
         </div>
       </section>
       <section>
