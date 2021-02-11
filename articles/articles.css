@@ -57,16 +57,10 @@ header img {
 #center-box{
     margin: 10px auto;
     padding: 20px 5%;
-    width: 60%;
-    min-width: 400px;
+    width: 55%;
+    min-width: 500px;
     min-height: 700px;
     background-color: #FFFFFF;
-}
-
-@media only screen and (max-width: 480px) {
-    #center-box{
-        width: 100%;
-    }
 }
 
 .text{
