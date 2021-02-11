@@ -57,8 +57,8 @@ header img {
 #center-box{
     margin: 10px auto;
     padding: 20px 5%;
-    width: 100%;
-    min-width: 500px;
+    width: 60%;
+/*     min-width: 500px; */
     min-height: 700px;
     background-color: #FFFFFF;
 }
